@@ -38,7 +38,6 @@ export default {
         return callback(new Error('请输入验证码'))
       } else {
         if (value.toLowerCase() !== self.validCode.toLowerCase()) {
-          console.log(value, self.validCode)
           return callback(new Error('验证码错误'))
         } else {
           callback()
@@ -87,6 +86,7 @@ export default {
             console.log(err)
           })
         } else {
+          self.$message({message: '请完善账号密码', type: 'error'})
           return false
         }
       })

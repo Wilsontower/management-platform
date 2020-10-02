@@ -13,6 +13,7 @@ axios.interceptors.request.use(function (config) {
   return config
 }, function (error) {
   // 对请求错误做些什么
+  router.push('/error')
   return Promise.reject(error)
 })
 
@@ -26,8 +27,10 @@ axios.interceptors.response.use(function (response) {
     if (error.response.status === 401) {
       localStorage.removeItem('token')
       router.push('/login')
+      return Promise.reject(error)
     }
   }
+  router.push('/error')
   return Promise.reject(error)
 })
 
