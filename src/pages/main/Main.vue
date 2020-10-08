@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-<!--    <top-nav></top-nav>-->
+    <top-nav></top-nav>
     <div id="container">
       <main-page></main-page>
     </div>
@@ -11,9 +11,10 @@
 
 <script>
 import MainPage from './MainPage'
+import TopNav from '../../common/TopNav'
 export default {
   name: 'Main',
-  components: {MainPage},
+  components: {MainPage, TopNav},
   data () {
     return {
       msg: 'Welcome to tower!'

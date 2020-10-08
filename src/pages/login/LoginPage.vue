@@ -3,14 +3,14 @@
     <div id="container">
       <div id="form">
         <el-form :label-position="labelPosition" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="auto">
-          <el-form-item label="账号" prop="userId">
-            <el-input v-model="ruleForm.userId"></el-input>
+          <el-form-item prop="userId">
+            <el-input v-model="ruleForm.userId" prefix-icon="el-icon-user"></el-input>
           </el-form-item>
-          <el-form-item label="密码" prop="password">
-            <el-input type="password" v-model="ruleForm.password" autocomplete="off"></el-input>
+          <el-form-item prop="password">
+            <el-input type="password" v-model="ruleForm.password" autocomplete="off" prefix-icon="el-icon-lock"></el-input>
           </el-form-item>
-          <el-form-item label="验证码" prop="code">
-            <el-input v-model="ruleForm.code" style="width: 63%;float:left;"></el-input>
+          <el-form-item prop="code">
+            <el-input v-model="ruleForm.code" style="width: 66%;float:left;" placeholder="验证码"></el-input>
             <verification-code ref="vCode" @handleCodeMsg="getCodeMsg"></verification-code>
           </el-form-item>
           <el-form-item>
@@ -45,7 +45,7 @@ export default {
       }
     }
     return {
-      labelPosition: 'right',
+      labelPosition: 'middle',
       validCode: '',
       ruleForm: {
         userId: '',
@@ -136,8 +136,8 @@ export default {
   #form {
 
     width: 70%;
-    height: 300px;
-    margin-top: 5%;
+    height: 10%;
+    margin-top: 10%;
     background: gray;
   }
 

@@ -72,6 +72,7 @@ export default {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 5px;
     span{
       display: inline-block;
     }

@@ -1,7 +1,5 @@
 <template>
   <div id="page-main">
-    <h2>main</h2>
-    <el-button type="primary" @click="gotoDetail">主要按钮</el-button>
   </div>
 </template>
 
