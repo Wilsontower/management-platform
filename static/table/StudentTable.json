@@ -1,0 +1,32 @@
+[
+  {
+    "label":"姓名",
+    "prop":"name",
+    "width": "auto",
+    "sortable": true
+  },
+  {
+    "label":"性别",
+    "prop":"sex",
+    "width": "auto",
+    "sortable": true
+  },
+  {
+    "label":"年龄",
+    "prop":"age",
+    "width": "auto",
+    "sortable": true
+  },
+  {
+    "label":"班级",
+    "prop":"classRoom",
+    "width": "auto",
+    "sortable": true
+  },
+  {
+    "label":"电话",
+    "prop":"tel",
+    "width": "auto",
+    "sortable": false
+  }
+]

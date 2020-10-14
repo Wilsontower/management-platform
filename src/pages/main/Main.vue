@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <top-nav></top-nav>
+<!--    <top-nav></top-nav>-->
     <div id="container">
       <main-page></main-page>
     </div>
@@ -26,10 +26,14 @@ export default {
 <style lang="scss" scoped>
 
   .home{
-    min-height: 1200px;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 0;
 
     #container{
-      min-height: 1200px;
+      min-width: 100%;
+      min-height: 100vh;
+      padding: 0;
     }
   }
 </style>
